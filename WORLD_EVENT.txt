@@ -1,0 +1,34 @@
+GITHUB FOR PROJ 5: ANDREW KERR
+
+1. how to trigger the event
+
+    Whenever you click on a tile, a random number of nearby background tiles will react!
+
+2. what should happen when the event is triggered
+
+    The selected tiles will turn into desert, 0-2 Desert Dudes will spawn,
+    0-2 Cacti will spawn, and 0-1 Desert Fairies will spawn.
+
+3. what the affected entities should do
+
+    If a Dude, Fairy, or Plant Entity is occupying a new desert tile, they will be transformed into their desert counterpart.
+    Also, if a Desert Fairy is within the zone, it will give up on being a fairy and build a new house for the Dudes!
+
+4. what the new entity is and how it should behave (if applicable)
+
+    The new entities should behave similarly to their Forest (original) counterparts, except they should only
+    interact with entities of the desert ecosystem (aside from houses, those are shared)
+
+5. the names of each partner and what each partner was responsible for
+
+    Andrew Kerr:
+        * Refactoring of base code (was my Project code that was used):
+            - Creation of new classes
+            - Moving similar methods up the hierarchy (e.g. transform)
+        * Code for changing Background
+        * Code for spawning new entities
+
+    Dylan Li:
+        * Sprite creation
+        * Checking new code is OOP
+        * Code for transforming entities

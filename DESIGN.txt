@@ -1,0 +1,17 @@
+I added getCurrentImage() to both Entity and Background. This is because it included an if-else statement, dependent
+upon if the passed in Object was an Entity or Background.
+
+I decided to place adjacent() in Point. This is because its arguments were two points. By putting it in Points, I was
+able to reduce the amount of arguments to one.
+
+I placed clamp() in Viewport because it is only accessed by methods in that class.
+
+I placed distanceSquared() in WorldModel because it is only accessed by methods in that class.
+
+I left parse*, along with most of the public static variables in Functions because:
+    1. I am unsure of where they should go; I thought maybe Entity or WorldModel
+    2. When I tried moving them and refactoring, I was never able to solve all the problems this caused.
+    3. They seem utility enough that maybe they should stay in Functions.
+
+I moved all the create* to Entity because some methods I put in Entity used them, and it seemed like where
+Entity creation should go at the moment. I left them static so a few methods left in Functions can access them.
